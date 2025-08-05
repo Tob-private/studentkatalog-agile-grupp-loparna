@@ -4,7 +4,7 @@ type Student = {
   active: boolean;
 };
 
-const students: Student[] = [
+export const students: Student[] = [
   { name: "Alice", age: 20, active: true },
   { name: "Bob", age: 22, active: true },
   { name: "Caroline", age: 21, active: true },
