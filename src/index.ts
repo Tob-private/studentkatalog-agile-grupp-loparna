@@ -1,32 +1,34 @@
 import { students } from "./students.js";
 
-const katalogArticle = document.querySelector('.student-katalog') as HTMLElement
+const catalogUl = document.querySelector('.student-list') as HTMLElement
 
 // This can be increased and decreased to "create" more students
 let displayedStudentsAmount: number = 10
 
 const renderStudents = (amount: number) => {
+    // Clear catalog
+    catalogUl.innerHTML = ""
+
     // Loop over the desired amount of students
     for (let i = 0; i < amount; i++) {
         // Select the student
         const element = students[i];
 
         // Create the parent section element, where all student data will be displayed
-        const sectionElement: HTMLElement = document.createElement('section')
-        // Add html elements here
+        const Lielement: HTMLElement = document.createElement('li')
 
         // Name
         const h3Element: HTMLHeadingElement = document.createElement('h3')
         h3Element.innerText = element.name
-        sectionElement.appendChild(h3Element)
+        Lielement.appendChild(h3Element)
 
         // Age
         const ageElement = document.createElement('p');
         ageElement.textContent = `Ålder: ${element.age}`;
-        sectionElement.appendChild(ageElement);
+        Lielement.appendChild(ageElement);
 
         // Appends section element to article element
-        katalogArticle.appendChild(sectionElement)
+        catalogUl.appendChild(Lielement)
     }
 }
 
