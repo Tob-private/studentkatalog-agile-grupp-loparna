@@ -7,6 +7,8 @@ if (addButton) {
     addButton.addEventListener('click', () => {
         if (displayedStudentsAmount < students.length) {
             displayedStudentsAmount++
+        } else {
+            alert('No more students to add')
         }
         renderStudents(displayedStudentsAmount)
     })
