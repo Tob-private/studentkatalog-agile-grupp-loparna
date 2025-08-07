@@ -15,6 +15,11 @@ const renderStudents = (amount: number) => {
         const sectionElement: HTMLElement = document.createElement('section')
         // Add html elements here
 
+        // Name
+        const h3Element: HTMLHeadingElement = document.createElement('h3')
+        h3Element.innerText = element.name
+        sectionElement.appendChild(h3Element)
+
         // Age
         const ageElement = document.createElement('p');
         ageElement.textContent = `Ålder: ${element.age}`;
