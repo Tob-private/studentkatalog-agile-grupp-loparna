@@ -1,6 +1,19 @@
 import { students } from "./students.js";
 
 const catalogUl = document.querySelector('.student-list') as HTMLElement
+const katalogArticle = document.querySelector('.student-katalog') as HTMLElement
+const addButton = document.querySelector('.add-student') as HTMLButtonElement
+
+if (addButton) {
+    addButton.addEventListener('click', () => {
+        if (displayedStudentsAmount < students.length) {
+            displayedStudentsAmount++
+        } else {
+            alert('No more students to add')
+        }
+        renderStudents(displayedStudentsAmount)
+    })
+}
 
 // This can be increased and decreased to "create" more students
 let displayedStudentsAmount: number = 10
