@@ -1,0 +1,14 @@
+
+
+.active-student {
+    border: 2px solid green;
+    background-color:  white;
+    cursor: pointer;
+}
+
+.inactive-student {
+    border:  2px solid red;
+    background-color: white;
+    cursor: pointer;
+
+}

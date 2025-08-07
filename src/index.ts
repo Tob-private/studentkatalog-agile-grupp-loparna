@@ -37,9 +37,24 @@ const renderStudents = (amount: number) => {
         ageElement.textContent = `Ålder: ${element.age}`;
         sectionElement.appendChild(ageElement);
 
+        // Status om aktive eller inte
+        const status = document.createElement('p');
+        status.textContent = element.active ? 'Status: Aktive' : 'Status: inaktive';
+        sectionElement.appendChild(status);
+
+        // toggle function for status
+        sectionElement.addEventListener('click', () => {
+            element.active = !element.active;
+            renderStudents(displayedStudentsAmount);
+        });
+
         // Appends section element to article element
         katalogArticle.appendChild(sectionElement)
+
+      
     }
 }
+ 
+
 
 renderStudents(displayedStudentsAmount)
