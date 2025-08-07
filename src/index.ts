@@ -15,6 +15,10 @@ const renderStudents = (amount: number) => {
         const sectionElement: HTMLElement = document.createElement('section')
         // Add html elements here
 
+        // Age
+        const ageElement = document.createElement('p');
+        ageElement.textContent = `Ålder: ${element.age}`;
+        sectionElement.appendChild(ageElement);
 
         // Appends section element to article element
         katalogArticle.appendChild(sectionElement)
