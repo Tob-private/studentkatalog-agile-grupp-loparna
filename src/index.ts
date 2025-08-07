@@ -15,6 +15,9 @@ const renderStudents = (amount: number) => {
         const sectionElement: HTMLElement = document.createElement('section')
         // Add html elements here
 
+        const h3Element: HTMLHeadingElement = document.createElement('h3')
+        h3Element.innerText = element.name
+        sectionElement.appendChild(h3Element)
 
         // Appends section element to article element
         katalogArticle.appendChild(sectionElement)
