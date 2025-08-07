@@ -1,7 +1,6 @@
 import { students } from "./students.js";
 
 const catalogUl = document.querySelector('.student-list') as HTMLElement
-const katalogArticle = document.querySelector('.student-katalog') as HTMLElement
 const addButton = document.querySelector('.add-student') as HTMLButtonElement
 
 if (addButton) {
