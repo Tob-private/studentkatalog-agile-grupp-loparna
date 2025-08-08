@@ -38,8 +38,9 @@ const renderStudents = (amount: number) => {
         sectionElement.appendChild(ageElement);
 
         // Status om aktive eller inte
+        // fixed a comment
         const status = document.createElement('p');
-        status.textContent = element.active ? 'Status: Aktive' : 'Status: inaktive';
+        status.textContent = element.active ? 'Status: Aktiv' : 'Status: Inaktiv';
         sectionElement.appendChild(status);
 
         // toggle function for status
