@@ -1,1 +1,4 @@
-# studentkatalog-agile-grupp-loparna
+# Anteckningar för agilt arbete - Löparna
+Vi började med att skriva om user stories och skapade fler uppgifter som behövdes för sprinten. Under arbetet gjorde vi även en refinement där vi gick igenom, prioriterade, storleksbestämde och estimerade både stories och uppgifter. Det behövdes att någon la en bas för kodbasen, så den gjordes innan någon annan gjorde något. Senare i sprinten genomfördes reviews och feature branches mergades in i main. 
+
+När vi tittade tillbaka på sprinten konstaterade vi att gruppdynamiken fungerat bra och att samarbetet och planeringen varit styrkor. Samtidigt var sprinten kort och kursupplägget gjorde det svårt att följa ett agilt arbetssätt. En hel arbetsdag föll bort, och det blev rörigt när nya gruppmedlemmar kom in mitt i. Dessutom upplevdes GitHub Projects som otydligt, och många av uppgifterna var för små för att ge bra flöde.
