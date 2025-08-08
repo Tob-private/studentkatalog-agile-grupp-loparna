@@ -39,9 +39,22 @@ const renderStudents = (amount: number) => {
         ageElement.textContent = `Ålder: ${element.age}`;
         Lielement.appendChild(ageElement);
 
-        // Appends section element to article element
+        // Status om aktive eller inte
+        // fixed a comment
+        const status = document.createElement('p');
+        status.textContent = element.active ? 'Status: Aktiv' : 'Status: Inaktiv';
+        Lielement.appendChild(status);
+
+        // toggle function for status
+        Lielement.addEventListener('click', () => {
+            element.active = !element.active;
+            renderStudents(displayedStudentsAmount);
+        });
+        
         catalogUl.appendChild(Lielement)
     }
 }
+ 
+
 
 renderStudents(displayedStudentsAmount)

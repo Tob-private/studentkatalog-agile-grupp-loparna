@@ -32,3 +32,4 @@ export const students: Student[] = [
   { name: "Yvonne", age: 20, active: true },
   { name: "Zachary", age: 22, active: true },
 ];
+
