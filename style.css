@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9a007ea9e5b627700b80067fb778be1fd535cb7b
 
 .active-student {
     border: 2px solid green;
@@ -10,7 +14,15 @@
     background-color: white;
     cursor: pointer;
 
+<<<<<<< HEAD
 ul {
     list-style: none;
     padding-left: 5px;
+=======
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+
+>>>>>>> 9a007ea9e5b627700b80067fb778be1fd535cb7b
 }

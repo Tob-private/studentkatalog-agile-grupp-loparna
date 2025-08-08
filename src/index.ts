@@ -50,7 +50,7 @@ const renderStudents = (amount: number) => {
             element.active = !element.active;
             renderStudents(displayedStudentsAmount);
         });
-        // Appends section element to article elemen
+        
         catalogUl.appendChild(Lielement)
     }
 }
